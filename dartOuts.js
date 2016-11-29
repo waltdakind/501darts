@@ -5,6 +5,10 @@ let singles =[];
 let doubles = [];
 // values of targets on inner ring midway between doubles ring and bullseye
 let triples = [];
+
+//last dart options this will be either a copy of the doubles array or doubles and triples
+// concatenated plus single bulls for "Master Out" option
+
 // this will be either an array of arrays, or a single array
 let outsToShow = [];
 
@@ -44,8 +48,9 @@ let allTargets = [...singles, ...doubles, ...triples];
 //console.log(allTargets);
 
 // find out function  
-// don't just calculate out -- show best options as recommended
-// 
+//TO DO don't just calculate out -- show best options as recommended
+// (first we'' use calculations to show all possibilities and filter out duplicate combinations)
+
 
 let findOut = (num) => {
 
@@ -59,6 +64,8 @@ let findOut = (num) => {
 // 3 Dart out shots 135 - 101 
 //
 // 3 Dart out shots 80 - 61
+
+//
 let getToAnOut = (num) => {
 switch(num) {
     case num>180:
