@@ -14,8 +14,6 @@ console.log(`With 3 darts: ${threeDartOuts[lookupKey]}`);
 if (twoDartOuts[lookupKey] !== undefined){
 console.log(`With 2 darts: ${twoDartOuts[lookupKey]}`);
 }
-
-//console.log(twoDartOuts[lookupKey]);
 }
 
 findOut(arg);
