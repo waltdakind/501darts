@@ -7,5 +7,5 @@ Display the "outs" (number combination to reach zero) for a given number based o
 Motivation for this is that most out charts don't display well on my phone and don't include tripling out options. 
 
 
-Out charts can be found at [http://www.dartbase.com/outchart1.htm]
-and [http://www.dartbase.com/outchart2.htm], other good advice, articles about darts, and dart supplies can be found there too.
+Out charts can be found at [3 Dart Outs -- Dartbase](http://www.dartbase.com/outchart1.htm)
+and [2 Dart Outs  -- Dartbase](http://www.dartbase.com/outchart2.htm), other good advice, articles about darts, and dart supplies can be found there too.
