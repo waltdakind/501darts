@@ -1,0 +1,27 @@
+{
+  "name": "501darts",
+  "version": "1.0.0",
+  "description": "Look up recommended outs for a given number in '01 based dart games.",
+  "main": "dartOuts.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waltdakind/501darts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waltdakind/501darts/issues"
+  },
+  "homepage": "https://github.com/waltdakind/501darts#readme"
+}
