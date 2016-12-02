@@ -1,7 +1,7 @@
 const http = require('http');
 const path = require('path');
 const express = require('express');
-const lookup = require('./lookup').findOut;
+const lookup = require('./lookup');
 const PORT = process.env.PORT || 3000;
 const app = express();
 const bodyParser = require('body-parser');
@@ -33,7 +33,8 @@ router.use(function(req, res, next) {
 
 router.get('/:num', function(req, res) {
 	let lookupKey = 'key'+req.params.num;
-    res.send({message: threeDartOuts[lookupKey]});
+	lookup.findOut(req.params.num);
+    res.send({"Three Darts": threeDartOuts[lookupKey], "Two Darts": twoDartOuts[lookupKey]});
    
 });
 
@@ -51,4 +52,5 @@ app.use('/api', router);
 // Listen for requests
 var server = app.listen(app.get('PORT'), function() {
   console.log('Dayummmm that PORT is sooooo...' + PORT);
+  
 });

@@ -1,5 +1,5 @@
 exports.threeDartOuts = {
-"key170": ["T20 - T20 - D25", "T20 - T20 - D25"],
+"key170": "T20 - T20 - D25",
 "key167": "T20 - T19 - D25",
 "key164": ["T20 - T18 - D25", "T19 - T19 - D25"],
 "key161": "T20 - T17 - D25",
