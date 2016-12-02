@@ -22,7 +22,7 @@ const morgan     = require('morgan');
 
 // Define the port to run on
 // =============================================================================
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.set('PORT', PORT);
 
 //serve public folder
