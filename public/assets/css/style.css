@@ -14,7 +14,10 @@ header  {
     color: darkgreen;
 }
 .well{
-    font-weight: bold;   
+    max-width: 900px;
+    margin: auto;
+    font-weight: bold;  
+    margin-top: 2 px; 
 }
 .p{
    
@@ -22,7 +25,7 @@ header  {
 .fa-refresh{
     font-size: 7em;
     color: blue;
-    position: absolute;
+    position: relative;
     margin-top: 1em;
     text-align: center;
 }
