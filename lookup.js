@@ -9,11 +9,15 @@ let lookupKey ='key'+num;
 
 if (threeDartOuts[lookupKey] !== undefined){
 console.log(`With 3 darts: ${threeDartOuts[lookupKey]}`);
+res.json(threeDartOuts[lookupKey]);
 }
 
 if (twoDartOuts[lookupKey] !== undefined){
 console.log(`With 2 darts: ${twoDartOuts[lookupKey]}`);
+
 }
 }
 
-findOut(arg);
+//findOut(arg);
+
+module.exports.findOut = findOut;
