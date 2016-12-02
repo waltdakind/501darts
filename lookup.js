@@ -9,12 +9,12 @@ let findOut = (num) => {
 let lookupKey ='key'+num;
 
 if (threeDartOuts[lookupKey] !== undefined){
-console.log(`With 3 darts: ${threeDartOuts[lookupKey]}`);
+console.log(`Three darts to throw: ${threeDartOuts[lookupKey]}`);
 
 }
 
 if (twoDartOuts[lookupKey] !== undefined){
-console.log(`With 2 darts: ${twoDartOuts[lookupKey]}`);
+console.log(`Two darts to throw: ${twoDartOuts[lookupKey]}`);
 
 }
 }

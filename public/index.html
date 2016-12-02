@@ -1,28 +1,31 @@
 <DOCTYPE! = "html">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<script src ="https://code.jquery.com/jquery-3.1.1.min.js">
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <html>
 	<body>
-<h1>501 Outchart Lookup</h1>
+	<header><h1>501 Outchart Lookup</h1></header>
+
 	<div class="jumbotron">
   <div class="container">
  <div class="col-lg-6">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter starting number...">
+      <input type="text" class="form-control" id = "val" placeholder="Enter starting number...">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Show my outs!</button>
       </span>
-    </div><!-- /input-group -->
+    </div>
   </div>
   </div>
   <div class = "row">
@@ -33,6 +36,36 @@
   </div>
   </div>	
 </div>
+<script>
+$(function() {
+	    $('button').on('click', function () {
+	    	var val = $('#val').val();
+	    	var link = 'http://localhost:3000/api/'+val;
+        // remove resultset if this has already been run
+        $('.well').empty();
 
+        // add spinner to indicate something is happening
+        $('<i class="fa fa-refresh fa-spin"/>').append('.well');
+
+  console.log('right on!');
+ $.get( link, function( data ) {
+   console.log(data);
+  data.map(function(element) {
+console.log('map: ' + element);
+if(element != null){
+$( ".well" ).append( "<p>" + element + "</p></br><br>");
+return element;
+}
+});
+
+});
+
+$('.fa-spin').remove();
+
+});
+});
+
+
+</script>
 	</body>
 </html>
