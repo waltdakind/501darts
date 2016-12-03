@@ -22,7 +22,7 @@ const morgan     = require('morgan');
 
 // Define the port to run on
 // =============================================================================
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.set('PORT', PORT);
 
 //serve public folder
@@ -45,14 +45,27 @@ router.use((req, res, next) => {
 // =============================================================================
 router.get('/:num', (req, res) => {
 	let outs = [];
-	let lookupKey = 'key'+req.params.num;
+	let target = req.params.num;
+	let lookupKey = 'key'+ target;
 	let three = threeDartOuts[lookupKey];
 	let two = twoDartOuts[lookupKey];
-	outs.push("<p> With Three Darts</p>");
-	outs.push(three);
-	outs.push("<p> With Two Darts</p>");
-	outs.push(two);
-	lookup.findOut(req.params.num);
+	if(target>170 || target<61){
+	outs.push("<p> Pick a number within range (61-170) please.</p>");	
+	}
+	// Bogey No’s – 169, 168, 166,165, 163,162 & 159
+	else if (target== 169|| target== 168|| target== 166|| target==165 || target==163 || target==162 || target ==159){
+	outs.push("<p> Unfortunately that is a bogey number. No three dart combo exists.</p>");	
+	}
+	else{
+		outs.push("<p> With Three Darts</p>");
+	    outs.push(three);
+	if(req.params.num<110){
+		outs.push("<p> With Two Darts</p>");
+		outs.push(two);
+	}
+	lookup.findOut(req.params.num);	
+	}
+
     res.send(outs);
    
 });
