@@ -28,5 +28,5 @@ To install a local version:
 
  + `node server.js`   (`npm start` will work too)
 
-+ Open your browser to http://localhost:3000
++ Point your browser to http://localhost:3000
 
