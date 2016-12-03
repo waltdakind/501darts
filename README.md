@@ -18,13 +18,13 @@ If for whatever reason you just wanted to make an API call to get some dart outs
 Clone this repo & cd into the newly created directory
  + `git clone git@github.com:waltdakind/501darts.git && cd 501darts`
 
- ## Download dependencies with node package manager
+ + Download dependencies with node package manager
 
- + `npm install`
+  `npm install`
 
- ## Start the server
++ Start the server
 
- + `node server.js`   (`npm start` will work too)
+  `node server.js`   (`npm start` will work too)
 
 + Point your browser to http://localhost:3000
 
