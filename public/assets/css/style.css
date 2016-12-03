@@ -10,7 +10,7 @@ h1{
 }   
 
 header  {
-    text-transform: capitalize;
+
     color: darkgreen;
 }
 .well{
@@ -29,4 +29,10 @@ header  {
     position: relative;
     margin-top: 1em;
     text-align: center;
+}
+
+footer {
+    margin: auto;
+    font-weight: bold;  
+    text-align: center;    
 }
