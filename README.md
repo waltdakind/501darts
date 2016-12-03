@@ -11,7 +11,7 @@ and [2 Dart Outs  -- Dartbase](http://www.dartbase.com/outchart2.htm), other goo
 
 If you have a suggestion for an out to add to the app, or you just want to thank me for this wonderful bit of coding :) , feel free to send me a message.
 
-If for whatever reason you just wanted to make an API call to get some dart outs, you should construct your GET request here: https://five-oh-one.herokuapp.com/api/key(your_number_without_the_parentheses) 
+If, for whatever reason, you just wanted to make an API call to get some dart outs, you should construct your GET request here: https://five-oh-one.herokuapp.com/api/key(your_number_without_the_parentheses) 
 
 ## To install a local version: 
 
