@@ -16,6 +16,7 @@ If for whatever reason you just wanted to make an API call to get some dart outs
 ## To install a local version: 
 
  + Clone this repo & cd into the newly created directory
+ 
   `git clone git@github.com:waltdakind/501darts.git && cd 501darts`
 
  + Download dependencies with node package manager
