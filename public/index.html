@@ -57,7 +57,9 @@
 $(function() {
 	    $('button').on('click', function () {
 	    	var val = $('#val').val();
-	    	var link = 'https://five-oh-one.herokuapp.com/api/'+val;
+	    	 //var link = 'http://localhost:3000/api/'+val;
+	    	 // switch between link above and below for running locally or deploying
+	    	 var link = 'https://five-oh-one.herokuapp.com/api/'+val;
         // remove prior result if this has already been run
         $('.well').empty();
 
