@@ -57,7 +57,7 @@ router.get('/:num', (req, res) => {
 	outs.push("<p> Unfortunately that is a bogey number. No three dart combo exists.</p>");	
 	}
 	else{
-		outs.push("<p> With Three Darts</p>");
+		if(three!=null){outs.push("<p> With Three Darts</p>");}
 	    outs.push(three);
 	if(req.params.num<110){
 		outs.push("<p> With Two Darts</p>");
