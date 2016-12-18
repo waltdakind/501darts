@@ -28,7 +28,7 @@ app.set('PORT', PORT);
 //serve public folder
 app.use(express.static(__dirname + '/public'));
 //==============================================================================
-// ROUTES FOR OUR API
+// ROUTES FOR THE API
 // =============================================================================
 const router = express.Router();              // get an instance of the express Router
 
@@ -49,8 +49,8 @@ router.get('/:num', (req, res) => {
 	let lookupKey = 'key'+ target;
 	let three = threeDartOuts[lookupKey];
 	let two = twoDartOuts[lookupKey];
-	if(target>170 || target<61){
-	outs.push("<p> Pick a number within range (61-170) please.</p>");	
+	if(target>170 || target<2){
+	outs.push("<p> Pick a number within range (170 - 2) please.</p>");	
 	}
 	// Bogey No’s – 169, 168, 166,165, 163,162 & 159
 	else if (target== 169|| target== 168|| target== 166|| target==165 || target==163 || target==162 || target ==159){
