@@ -8,9 +8,10 @@ h1{
      font-family: 'Fjalla One', sans-serif;
      text-align: center;
 }   
-
+body {
+    margin: 50 px, 50 px, 50 px. 50 px;
+}
 header  {
-
     color: darkgreen;
 }
 .well{
@@ -20,9 +21,6 @@ header  {
     margin-top: 2 px;
     text-align: center; 
 }
-.p{
-   
-}
 .fa-refresh{
     font-size: 7em;
     color: blue;
@@ -30,7 +28,6 @@ header  {
     margin-top: 1em;
     text-align: center;
 }
-
 footer {
     margin: auto;
     font-weight: bold;  
