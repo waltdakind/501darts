@@ -1,4 +1,4 @@
-# 501darts
+# 501 darts
 
 Look up recommended outs for a given number in '01 based dart games.
 
