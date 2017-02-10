@@ -1,6 +1,8 @@
 voice recognition -- Alexa API?
 
 restyle -- sass with a responsive mixin
-
+ +start draft scss file from existing css
+ +use pallete from portfolio
+ +replace images with higher res or svg
 refactor for react
 
