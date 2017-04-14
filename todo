@@ -1,6 +1,11 @@
 voice recognition -- Alexa API?
 
-restyle -- sass with a responsive mixin
+restyle -- sass with a responsive mixin?
+--  make outs larger and color coded
+--  use sass variables for double, triple, single
+-- create buttons to enter numbers
+
+
  +start draft scss file from existing css
  +use pallete from portfolio
  +replace images with higher res or svg
