@@ -11,3 +11,6 @@ restyle -- sass with a responsive mixin?
  +replace images with higher res or svg
 refactor for react
 
+
+use algebra.js for triple out logic 
+and for creating the option to list every possible out (not just recommended)
