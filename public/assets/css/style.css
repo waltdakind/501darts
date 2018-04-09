@@ -1,11 +1,11 @@
 .jumbotron{
     max-width: 900px;
     margin: 2em auto;
-    font-family: 'Cantarell', sans-serif;
+    font-family: 'Monospace', sans-serif;
     text-align: center;
 }
 h1{
-     font-family: 'Fjalla One', sans-serif;
+     font-family: 'Monospace', sans-serif;
      text-align: center;
 }   
 body {
