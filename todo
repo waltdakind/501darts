@@ -13,4 +13,6 @@ refactor for react
 
 
 use algebra.js for triple out logic 
-and for creating the option to list every possible out (not just recommended)
+and for creating the option to list every possible out (not just recommended outs)
+
+--set up a version in react simply by using the same API endpoints
